@@ -1,7 +1,8 @@
 import gradio as gr
-import random
-import time
-import openai  
+import openai
+import os
+
+app_port = int(os.getenv("APP_PORT",35126))  
   
 # 用你的OpenAI API密钥替换这里  
 openai.api_type = "azure"
@@ -96,5 +97,5 @@ with gr.Blocks() as demo:
     clear.click(clean_msg)
 
 
-demo.launch(share=True)
+demo.launch(share=True, server_port=app_port)
 
