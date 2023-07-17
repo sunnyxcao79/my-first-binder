@@ -81,7 +81,7 @@ with gr.Blocks() as demo:
     gr.Markdown(
     """
     # AI Chat Mask (OBS)
-    A simple chatbot with masking using OpenAI's ChatCompletion API for HK OBS.
+    A simple chatbot with masking using OpenAI's ChatCompletion API for OBS.
     """) 
     theme = "gradio/monochrome"
     title = "AI CHAT Mask (OBS)"
